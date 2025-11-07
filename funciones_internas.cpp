@@ -2,6 +2,8 @@
 #include <vector>
 #include <ranges>
 #include <algorithm>
+#include <cmath>
+
 using namespace std;
 
 int main(){
@@ -17,6 +19,16 @@ int main(){
     cout<<"Ingrese el segundo numero: ";
     cin>>numero2;
     int z = std::max(numero, numero2);
+
+    cout<<"Calculando la potencia: ";
+    int potencia = pow(numero, numero2);
+    cout<<"El resultado de la potencia es: "<<potencia<<"\n";
+
+    const double pi = 3.1416;
+    cout<<"El valor de pi redondeado es: "<<round(pi)<<'\n';
+    cout<<"El valor redondeado hacia arriba es: "<<ceil(pi)<<'\n';
+    cout<<"El valor redondeado hacia abajo es: "<<floor(pi)<<'\n';
+
     cout<<"El maximo entre los numeros es: "<<z<<'\n';
     return 0;
 }
